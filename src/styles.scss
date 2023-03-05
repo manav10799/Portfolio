@@ -1,1 +1,226 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+  font-family: 'Roboto Mono', monospace;
+}
+
+h1, p, h4 {
+  margin: 0;
+}
+
+.page-container {
+  padding: 60px;
+}
+
+.background-animate {
+  background-color: #ffffff;
+  opacity: 0.8;
+  background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#c4c6e8 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #c4c6e8 0.8px, #ffffff 0.8px) -0.4px 0;
+  background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
+  width: 100%;
+  height: calc(100vh - 140px);
+}
+
+.w-600 {
+  width: 600px;
+}
+
+.card {
+  background-color: white;
+}
+
+.d-flex {
+  display: flex;
+
+  &.align-items-center {
+    align-items: center;
+  }
+  
+  &.justify-content-center {
+    justify-content: center;
+  }
+}
+
+.h-100 {
+  height: 100%;
+}
+
+.p-40 {
+  padding: 40px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.mt-4 {
+  margin-top: 4px;
+}
+
+.icon-arrow {
+  font-size: 30px;
+  font-family: monospace;
+  margin-left: 4px;
+}
+
+.text-link {
+  color: blue;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.px-30 {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.max-w-850 {
+  max-width: 850px;
+}
+
+.w-850 {
+  width: 850px; 
+}
+
+.mb-50 {
+  margin-bottom: 50px;
+}
+
+.w-250 {
+  width: 250px;
+  min-width: 250px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+p {
+  &.text-large {
+    font-size: 18px;
+  }  
+}
+
+.font-weight-semi-bold {
+  font-weight: 600;
+}
+
+.skill-list {
+  ul {
+    li {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.text-hint {
+  color: rgb(107 114 128);
+}
+
+ul {
+  &.list-style {
+    display: list-item;
+    list-style-type:disc;
+    padding-inline-start: 1ch;  
+  }
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.border {
+  &.border-bottom {
+    border-bottom: 1px solid rgb(107 114 128);
+  }
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.mx-10 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+a {
+  &.text-underline{
+    text-decoration: underline;
+  }
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.show-on-mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .page-container {
+    padding: 0;
+  }
+  .my-card {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    width: fit-content;
+    div {
+      padding: 0;
+    }
+  }
+  .background-animate {
+    height: calc(100vh - 20px);
+  }
+}
+
+@media only screen and (max-width: 900px) {
+    .show-on-mobile {
+      display: block;
+    }
+
+    .hide-on-mobile {
+      display: none;
+    }
+    
+    .d-block  {
+      display: block !important;
+    }
+
+    .heading {
+      margin-bottom: 20px;
+      font-size: 24px;
+    }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

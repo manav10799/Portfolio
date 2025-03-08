@@ -6,7 +6,7 @@ import { MoreComponent } from './more/more.component';
 const routes: Routes = [
   { path: '', redirectTo: 'home' , pathMatch: 'full'},
   { path: 'home',component: HomePageComponent },
-  { path: 'more', component: MoreComponent},
+  { path: 'aboutme', component: MoreComponent},
 ];
 
 @NgModule({

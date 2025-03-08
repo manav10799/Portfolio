@@ -12,17 +12,13 @@ h1, p, h4 {
   margin: 0;
 }
 
-.page-container {
-  padding: 60px;
-}
-
 .background-animate {
   background-color: #ffffff;
   opacity: 0.8;
   background: radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #ffffff 20%, #ffffff 80%, transparent 80%, transparent) 10px 10px, linear-gradient(#c4c6e8 0.8px, transparent 0.8px) 0 -0.4px, linear-gradient(90deg, #c4c6e8 0.8px, #ffffff 0.8px) -0.4px 0;
   background-size: 20px 20px, 20px 20px, 10px 10px, 10px 10px;
   width: 100%;
-  height: calc(100vh - 140px);
+  height: 100vh;
 }
 
 .w-600 {
@@ -80,7 +76,13 @@ a {
 }
 
 .text-link {
-  color: blue;
+  color: #1E90FF;
+}
+
+.text-link {
+  a {
+    color: #1E90FF;
+  }
 }
 
 .py-12 {
@@ -232,4 +234,12 @@ img {
 
 .flex-wrap {
   flex-wrap: wrap;
+}
+
+.pb-20 {
+  padding-bottom: 20px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
 }

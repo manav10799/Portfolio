@@ -2,182 +2,125 @@
   <div class="max-w-850 w-850 responsiveM">
     <div>
       <span routerLink="../home" class="cursor-pointer">
-        <img src="../../assets/backicon.gif">
+        <img src="../../assets/backicon.gif" />
       </span>
     </div>
-      <h1 class="mb-50">About Me.</h1>
-      <ul>
-        <li class="mb-50">
-          <div class="d-flex d-block">
-              <p class="w-250 font-weight-semi-bold heading">Skills</p>
-              <div class="skill-list">
-                <ul>
-                  <li>
-                    <p class="text-large font-weight-semi-bold">
-                      Angular, React
-                    </p>
-                  </li>
-                  <li>
-                    <p class="text-large font-weight-semi-bold">
-                      Javascript / TypeScript
-                    </p>
-                  </li>
-                  <li>
-                    <p class="text-large font-weight-semi-bold">
-                      HTML/CSS, Bootstrap, UI/UX
-                    </p>
-                  </li>
-                  <li>
-                    <p class="text-large font-weight-semi-bold">
-                      Git and REST APIs Integration.
-                    </p>
-                  </li>
-                  <li>
-                    <p class="text-large font-weight-semi-bold">
-                      Responsive Design and Cross-Browser Compatibility
-                    </p>
-                  </li>
-                  <li>
-                    <p class="text-large font-weight-semi-bold">
-                      Nodejs with express
-                    </p>
-                  </li>
-                </ul>
-              </div>
+    <h1 class="mb-50">About Me.</h1>
+    <ul>
+      <li class="mb-50">
+        <div class="d-flex d-block">
+          <p class="w-250 font-weight-semi-bold heading">Skills</p>
+          <div class="skill-list">
+            <ul>
+              <li>
+                <p class="text-large font-weight-semi-bold">
+                  Angular, React, HTML/CSS, Jest
+                </p>
+              </li>
+              <li>
+                <p class="text-large font-weight-semi-bold">
+                  Javascript / TypeScript
+                </p>
+              </li>
+              <li>
+                <p class="text-large font-weight-semi-bold">
+                  Redux Toolkit, RXJS, Bootstrap, Tailwind CSS, Figma
+                </p>
+              </li>
+              <li>
+                <p class="text-large font-weight-semi-bold">
+                  Git, React testing library and REST APIs Integration.
+                </p>
+              </li>
+              <li>
+                <p class="text-large font-weight-semi-bold">
+                  Responsive Design and Cross-Browser Compatibility
+                </p>
+              </li>
+              <li>
+                <p class="text-large font-weight-semi-bold">
+                  Nodejs with express
+                </p>
+              </li>
+            </ul>
           </div>
-        </li>
-        <li class="mb-50">
-          <div class="d-flex d-block">
-            <div class="w-250">
-              <p class="font-weight-semi-bold heading">Experience</p>
-              <span class="text-hint">
-                  July 2023 - Present
-              </span>
-            </div>
-            <div>
+        </div>
+      </li>
+      <li class="mb-50" *ngFor="let data of resumeData">
+        <div class="d-flex d-block">
+          <div class="w-250">
+            <p class="font-weight-semi-bold heading">{{ data.type }}</p>
+            <span class="text-hint"> {{ data.date }} </span>
+          </div>
+          <div>
+            <ul>
+              <li class="mb-10">
+                <p class="text-large font-weight-semi-bold">
+                  {{ data.company }} - {{ data.role }}
+                </p>
+              </li>
+              <li class="mb-10" *ngFor="let details of data.details">
+                {{ details }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li class="mb-50">
+        <div class="d-flex d-block">
+          <div class="w-250">
+            <p class="font-weight-semi-bold heading">Projects</p>
+          </div>
+          <div>
+            <p class="mb-10 font-weight-semi-bold">HubSpot</p>
+            <a href="https://cms-blog-self.vercel.app" target="_blank">
+              <img
+                src="../../assets/Frame 1.svg"
+                alt=""
+                width="600"
+                height="300"
+                class="hide-on-mobile"
+              />
+              <img
+                src="../../assets/Frame 2.svg"
+                alt=""
+                width="600"
+                height="300"
+                class="show-on-mobile"
+              />
+            </a>
+            <div class="mt-20">
+              <p class="font-weight-semi-bold text-large mb-10">Tech Stack</p>
               <ul>
-                <li class="mb-10">
-                  <p class="text-large font-weight-semi-bold">
-                  Opentext, Hyderabad — SDE-2
-                  </p>
-                </li>
-                <li class="mb-10">Contributed to the complete redesign and integration, following the decision to switch to a new design.</li>
-                <li class="mb-10">
-                  Worked with the Content Management team, overseeing new features such as seamless file uploads with document types and categories.
-                </li>
-                <li class="mb-10">
-                  Followed Agile methodology to manage project timelines and
-                  deliverables, and regularly participated in daily stand-up
-                  meetings , sprint and daily scrums.
-                </li>
+                <li>1/3: Angular</li>
+                <li>2/3: TypeScript</li>
+                <li>3/3: Node with express</li>
               </ul>
             </div>
           </div>
-        </li>
-        <li class="mb-50">
-          <div class="d-flex d-block">
-            <div class="w-250">
-              <p class="font-weight-semi-bold heading">Experience</p>
-              <span class="text-hint">
-                  Aug 2021 - June 2023
-              </span>
-            </div>
-            <div>
-              <ul>
-                <li class="mb-10">
-                  <p class="text-large font-weight-semi-bold">
-                  Keka HR, Hyderabad — SDE-1 Frontend
-                  </p>
-                </li>
-                <li class="mb-10">Performed integrations with Rest Api's.</li>
-                <li class="mb-10">
-                  Worked with PSA/Timesheet team build Project and Billing
-                  management system.
-                </li>
-                <li class="mb-10">
-                  Followed Agile methodology to manage project timelines and
-                  deliverables, and regularly participated in daily stand-up
-                  meetings , sprint and daily scrums.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="mb-50">
-          <div class="d-flex  d-block">
-            <div class="w-250">
-              <p class="font-weight-semi-bold heading">Experience</p>
-              <span class="text-hint">
-                  Feb 2021 - Aug 2021
-              </span>
-            </div>
-            <div>
-              <ul>
-                <li class="mb-10">
-                  <p class="text-large font-weight-semi-bold">
-                  Keka HR, Hyderabad — SDE-1 Frontend Intern
-                  </p>
-                </li>
-                <li class="mb-10"> Gained hands-on experience in HTML, CSS, JavaScript and
-                  TypeScript and responsive design, cross-browser compatibility.</li>
-                <li class="mb-10">
-                  Contributed to the development of technical documentation and
-                  implemented a documentation website from scratch.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="mb-50">
-          <div class="d-flex d-block">
-            <div class="w-250">
-              <p class="font-weight-semi-bold heading">Education</p>
-              <span class="text-hint">July 2017- May 2021</span>
-            </div>
-            <div>
-              <ul>
-                <li>
-                  <p class="text-large font-weight-semi-bold">
-                  Chandigarh Group of Colleges, Mohali— Btech
-                  </p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </li>
-        <li class="mb-50">
-          <div class="d-flex d-block">
-            <div class="w-250">
-              <p class="font-weight-semi-bold heading">Projects</p>
-            </div>
-            <div>
-              <p class="mb-10 font-weight-semi-bold">HubSpot</p>
-              <a href="https://cms-blog-self.vercel.app" target="_blank">
-                <img src="../../assets/Frame 1.svg" alt="" width="600" height="300" class="hide-on-mobile">
-                <img src="../../assets/Frame 2.svg" alt="" width="600" height="300" class="show-on-mobile">
-              </a>
-              <div class="mt-20">
-                <p class="font-weight-semi-bold text-large mb-10">Tech Stack</p>
-                <ul>
-                  <li>1/3: Angular</li>
-                  <li>2/3: TypeScript</li>
-                  <li>3/3: Node with express</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </li>
-      </ul>
-      <div class="d-flex align-items-center mb-40">
-          <span class="border border-bottom w-50"></span>
-          <p class="mx-10 text-hint">end</p>
-          <span class="border border-bottom w-50"></span>
-      </div>
-      <div class="d-flex align-items-center justify-content-center pb-20">
-        <p>You can also check my old <a href="https://manav10799.github.io/index.html" class="text-underline" target="_blank">portfolio</a></p>
-      </div>
+        </div>
+      </li>
+    </ul>
+    <div class="d-flex align-items-center mb-40">
+      <span class="border border-bottom w-50"></span>
+      <p class="mx-10 text-hint">end</p>
+      <span class="border border-bottom w-50"></span>
+    </div>
+    <div class="d-flex align-items-center justify-content-center pb-20">
+      <p>
+        You can also check my old
+        <a
+          href="https://manav10799.github.io/index.html"
+          class="text-underline"
+          target="_blank"
+          >portfolio</a
+        >
+      </p>
+    </div>
   </div>
 </div>
 <div class="footer">
-  <p class="d-flex align-items-center">{{scrollPercent ? scrollPercent : 0}} / 100 %</p>
+  <p class="d-flex align-items-center">
+    {{ scrollPercent ? scrollPercent : 0 }} / 100 %
+  </p>
 </div>

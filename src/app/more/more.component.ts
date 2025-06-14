@@ -14,8 +14,8 @@ export class MoreComponent implements OnInit {
       company: "Opentext, Hyderabad",
       details: [
         "Contributed to the complete redesign and integration, following the decision to switch to a new design.",
-        "Worked with the Content Management team, overseeing new features such as seamless file uploads with document types and categories.",
-        "Followed Agile methodology to manage project timelines and deliverables, and regularly participated in daily stand-up meetings, sprint and daily scrums."
+        "Contributed to the migration of the admin panel from Backbone.js to React.",
+        "Worked on a Content Management project, implementing new features and improving app performance by identifying and resolving memory leaks due to improper cleanup during component unmounting."
       ]
     },
     {
@@ -24,9 +24,10 @@ export class MoreComponent implements OnInit {
       role: "SDE-1 Frontend",
       company: "Keka HR, Hyderabad",
       details: [
-        "Performed integrations with Rest Api's.",
-        "Worked with PSA/Timesheet team to build Project and Billing management system.",
-        "Followed Agile methodology to manage project timelines and deliverables, and regularly participated in daily stand-up meetings, sprint and daily scrums."
+        "Built a Project and Billing Management System with the PSA/Timesheet team.",
+        "Contributed to the development of reusable components and libraries, streamlining the development process.",
+        "Integrated REST APIs for smooth data exchange.",
+        "Reduced CSS file size and page load time by 70%, improving performance."
       ]
     },
     {
@@ -35,8 +36,8 @@ export class MoreComponent implements OnInit {
       role: "SDE-1 Frontend Intern",
       company: "Keka HR, Hyderabad",
       details: [
-        "Gained hands-on experience in HTML, CSS, JavaScript and TypeScript and responsive design, cross-browser compatibility.",
-        "Contributed to the development of technical documentation and implemented a documentation website from scratch."
+        "Gained hands-on experience with HTML, CSS, JavaScript, Angular, responsive design, and cross-browser compatibility.",
+        "Developed technical documentation and built a documentation website from scratch."
       ]
     },
     {
